@@ -1,0 +1,22 @@
+<div class="card" *ngFor="let item of commenntData">
+    <div class="grouped">
+        <div class="avatar">
+                
+        </div>
+
+        <div class="info">
+
+
+            <div class="rating_wrapper">
+                <h3><a href="/review/{{item.id}}">A review by {{item.author_details.name}}.</a></h3>
+                <div class="rounded rating"><span class="glyphicons_v2 star invert svg"></span>{{item.author_details.rating}}</div>
+            </div>
+
+            <h5 >Written by <a href="/u/{{item.author_details.username}}"> {{ item.author_details.name}}</a>   created on {{item.created_at | date}}</h5>
+        </div>
+    </div>
+    
+    <div class="teaser">
+        <p>{{item.content}}</p>
+    </div>
+</div>

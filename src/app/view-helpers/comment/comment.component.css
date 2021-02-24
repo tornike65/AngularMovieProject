@@ -1,0 +1,69 @@
+.card{
+    border: 1px solid rgba(var(--lightGrey), 1);
+    border-radius: var(--imageBorderRadius);
+    background-color: #282C33;
+}
+
+
+
+.avatar{
+    width: 64px;
+    margin-right: 20px;
+}
+
+.info{
+    width: 100%
+}
+
+.rating_wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.rating_wrapper h3{
+    display: inline-block;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.rating{
+    padding: 1px 8px;
+    margin-left: 14px;
+    font-size: 0.9em;
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #000;
+    border-color: #000;
+    border-radius: var(--imageBorderRadius);
+    color: #fff
+}
+
+.rating span{
+    margin-right: 2px;
+    color: #fff;
+    background-image: url('https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-49-star-67a24f6d4324aa644c594653e762b1c0de2b3e1ce0852171cfa49cc2650de374.svg');
+}
+
+.info h5{
+    font-weight: 300;
+    font-size: 0.9em;
+    margin-bottom: 0;
+}
+
+.teaser {
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+

@@ -1,0 +1,20 @@
+main{
+    background-color: #202328 !important;
+}
+
+.filter{
+    padding: 100px 0px;
+    width: 85%;
+    margin: auto;
+}
+
+.btn{
+    color: #ffffff;
+    background-color: #282C33;
+    margin: 10px 10px 0px 0px;
+}
+
+.btn:focus{
+    box-shadow: none;
+    outline: none;
+}

@@ -1,0 +1,42 @@
+<header>
+    <nav class="navbar navbar-dark">
+      <i class="fas fa-bars" (click)="showMenu()"></i> 
+      <a class="navbar-brand" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        MENU</a>
+          
+          <form class="form-inline mr-auto">
+            <input class="form-control mr-sm-2" name="search" #searchword (keyup)="search(searchword.value)"  type="search" placeholder="Search" aria-label="Search">
+          </form>
+          <div class="searh-result">
+            <div class="result" *ngFor="let item of filterData" (click)="GoInnerPage(item)">
+              <img src="https://image.tmdb.org/t/p/w500{{item.poster_path}}" alt="">
+              <p>{{item.title}}</p>
+            </div>
+          </div>
+          
+          <div class="user">
+            <ul #ul class="list-group">
+              <li class="list-group-item"><a (click)="goWatchlist()">Watchlist</a></li>
+              <li class="list-group-item"><a href="">Favorite</a></li>
+            </ul>
+            <button class="userbtn" (click)="userInfo(ul)">
+              <img src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png"  alt="">
+            </button>
+          </div>
+    </nav>
+    <app-loader></app-loader>
+  </header>
+<section class="menu col-md-12" (click)="showMenu()"  
+[ngClass]="status ? 'block' : ''">
+    <aside class="col-md-2">
+        <div class="list-group">
+            <a routerLink="/"  routerLinkActive="active"   [routerLinkActiveOptions]="{exact:true}" class="list-group-item"><svg fill="none" viewBox="0 0 22 22" class="fade-ready svg-icon svg-icon--menu-home"><circle cx="11" cy="11" r="11"></circle><path d="M9.6 16v-3.9h2.8V16h3.5v-5.2H18L11 5l-7 5.8h2.1V16h3.5z"></path></svg>მთავარი</a>    
+
+            <a routerLink="/movies" routerLinkActive="active" class="list-group-item"><svg fill="none" viewBox="0 0 22 22" class="fade-ready svg-icon svg-icon--menu-movies"><path fill="#fff" d="M14 7l1.2 2h-1.7l-1.2-2h-1l1 2h-1.7l-1-2H8.3l1.1 2H7.8L6.7 7H5v8h12V7h-3z"></path></svg>ფილმები</a>
+
+            <a routerLink="/episode" routerLinkActive="active"  class="list-group-item"><svg fill="none" viewBox="0 0 22 22" class="fade-ready svg-icon svg-icon--menu-tv-series"><path fill="#fff" fill-rule="evenodd" d="M15.2 8.5L14 6h3v10H5V6H6.7l1.1 2.5h1.7L8.4 6h1.1l1.1 2.5h1.7l-1-2.5h1l1.2 2.5h1.7zM9.6 11h1.2v-1l1.4 4.6h1.3L15 9.8h-1.4l-.7 2.7-.7-2.7h-5V11h1.1v3.6h1.3V11z" clip-rule="evenodd"></path></svg>სერიალები</a>
+        </div>
+    </aside>
+    <aside class="col-md-10">    
+    </aside>
+</section>

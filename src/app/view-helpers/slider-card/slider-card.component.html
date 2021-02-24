@@ -1,0 +1,45 @@
+<article  #name > 
+    <div class="card col-md-2 card1" (click)=showFullmovie(item) *ngFor="let item of cardsData">
+        <img src = "https://image.tmdb.org/t/p/w500{{item.poster_path}}"  class="card-img" alt="...">
+        <i class="far fa-play-circle"></i>
+    </div>  
+   
+</article>
+
+<article > 
+    <div class="card col-md-2 card2" (click)=showFullmovie(item) *ngFor="let item of tvShowcardsData">
+        <img src = "https://image.tmdb.org/t/p/w500{{item.poster_path}}"  class="card-img" alt="...">
+        <i class="far fa-play-circle"></i>
+    </div>   
+</article>
+
+<article> 
+    <div class="card col-md-2 card3" (click)=showFullmovie(item) *ngFor="let item of popularData">
+        <img  src = "https://image.tmdb.org/t/p/w500{{item.poster_path}}"  class="card-img" alt="...">
+        <i class="far fa-play-circle"></i>
+    </div>   
+</article>
+
+<article> 
+    <div class="card col-md-2 card4" (click)=showFullmovie(item) *ngFor="let item of tvUpcomingsData">
+        <img src = "https://image.tmdb.org/t/p/w500{{item.poster_path}}" class="card-img" alt="...">
+        <i class="far fa-play-circle"></i>
+    </div>   
+</article>
+
+
+<article> 
+    <div class="card col-md-2 card10" (click)=showFullmovie(item) *ngFor="let item of topTvSeries">
+        <img src = "https://image.tmdb.org/t/p/w500{{item.poster_path}}" class="card-img" alt="...">
+        <i class="far fa-play-circle"></i>
+    </div>   
+</article>
+
+
+<article> 
+    <div class="card col-md-2 card11" (click)=showFullmovie(item)  *ngFor="let item of similarmovieData">
+        <img src = "https://image.tmdb.org/t/p/w500{{item.poster_path}}" class="card-img" alt="...">
+        <i class="far fa-play-circle"></i>
+    </div>   
+</article>
+

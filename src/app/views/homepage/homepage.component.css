@@ -1,0 +1,49 @@
+.container{padding: 0; margin-top: 40px; position: relative;}
+.top h3{
+    font-size: 20px;
+    color: rgb(213, 221, 245);
+}
+
+main{
+    background-color: #202328 !important;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    width: 86%;
+    padding-right: 30px;
+    margin: 15px auto 0px;
+}
+
+.top .left{
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+}
+
+
+
+.arrow button {
+    border: none;
+    background-color: transparent;
+}
+
+.arrow button:focus{
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+
+
+.buttons .btn{
+    color:#fff;
+   
+}
+.buttons .day{
+    background-color: #1A90CF;
+}
+
+.buttons .btn:focus{box-shadow: none; outline: none;}
+

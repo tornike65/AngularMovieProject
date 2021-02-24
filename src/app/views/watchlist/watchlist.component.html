@@ -1,0 +1,10 @@
+<main>
+    <section>
+        <article class="filter">
+            <button class="btn" #btn (click) = "navigate(item)" (click) = "filterByGenre(item,btn)" *ngFor="let item of genreData">{{item.name}}</button>
+        </article>
+        <article>
+            <app-cards [watchlistData]="watchlistData"></app-cards>
+        </article>
+    </section>
+</main>

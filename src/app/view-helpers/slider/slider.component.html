@@ -1,0 +1,27 @@
+<section class="slider-area">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li  data-target="#carouselExampleCaptions" data-slide-to="0"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item" (click)="fullMovie(item)" *ngFor="let item of sliderData;first as isFirst" [ngClass]="{'active' : isFirst}">
+            <img src="https://image.tmdb.org/t/p/w1280{{item.backdrop_path}}" class="d-block w-100" alt="...">
+            <div class="carousel-caption play">
+              <div class="sc-1731qdu-0 sc-1095ysp-29 hekoMS "><svg class="svg-icon svg-icon--play-button" width="22" fill="none" viewBox="0 0 22 26"><path fill="#fff" d="M1.37876 26c-.35587-.0022-.69752-.1324-.9556-.364-.13448-.1205-.24142-.2658-.3142-.4269-.07277-.1612-.10985-.3346-.10894-.5098V1.30083c-.00066-.2334.0653-.46264.19092-.66357C.31656.43634.4972.27116.7138.15916c.2166-.112.46116-.1667.70789-.15832.24674.00838.48651.07953.69405.20594L21.3688 11.906c.1936.1178.3529.2797.4631.4708.1103.1911.1681.4052.1681.6229s-.0578.4319-.1681.623c-.1102.1911-.2695.3529-.4631.4707L2.11574 25.7927c-.21968.1342-.47541.2061-.73698.2073zm1.3717-22.31839V22.3185l15.33264-9.3191L2.75046 3.68161z"></path></svg></div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+</section>

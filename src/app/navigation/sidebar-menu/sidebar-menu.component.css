@@ -1,0 +1,107 @@
+.menu{padding: 0px; display: flex; position: absolute; top: 56px; bottom: 0px; left: 0px; right: 0px; z-index: 200; display: none;}
+.menu aside{padding: 0px;}
+.col-md-2{background-color:#191B20 ;}
+.list-group-item{border-radius: 0px; background-color: #191B20; color: #bbb; text-decoration: none; font-weight: 700; border-color: transparent !important;}
+.list-group-item:active{color: #009c7c !important;}
+.list-group-item:hover{color: #009c7c; border-left: 2px solid #009c7c !important;}
+.list-group-item:hover svg{background-color: #009c7c;}
+.list-group-item:hover svg path{fill: #ffffff;}
+.list-group-item svg{width: 25px;border-radius: 50%;background-color:rgb(62, 67, 71); margin-right: 10px;}
+.list-group-item svg path{font-size: 20px;fill:#969191}
+.col-md-10{background-color: black; opacity: 0.8;}
+
+header{width: 100%;background-color: #191B20; color: #ffffff;}
+header nav {width: 85%;margin: auto; background-color: #191B20;}
+.fa-bars{margin-right: 10px; cursor: pointer;}
+.form-inline{width: 800px; margin: auto;}
+.form-control{width: 100%; background-color: #313234; border-color: #313234; color: #ffffff;}
+.form-control:focus{box-shadow: none;outline: none;}
+.fa-user{font-size: 35px; cursor: pointer;}
+.block{display: flex;}
+.none{display: none;}
+.searh-result{
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #292929;
+    display: none;
+    max-height: 360px;
+    position: absolute;
+    top: 60px;
+    left: 45px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.searh-result .result{
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0px;
+    border-radius: 7px;
+}
+
+.searh-result .result img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.searh-result .result p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #ffffff;
+    z-index: 100;
+    font-size: 13px;
+}
+
+.show{
+    display: flex;
+}
+.hide{
+    display: none;
+}
+
+.user{
+    position: relative;
+}
+.user .userbtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+}
+
+.user .userbtn img{
+    width: 40px;
+    height: 40px;
+}
+
+.user button:focus{
+    outline: none;
+}
+
+.user ul{
+    position: absolute;
+    top: 43px;
+    right: -30px;
+    background-color: #343D44 !important;
+    display: none;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+.user ul li{ 
+    list-style: none;
+}
+.spinner-container{position: absolute; width: 100%; height: 100%; background-color: black; opacity: 0.7; z-index: 1000;}
+.user ul li a{
+    color:#ffffff;
+    cursor: pointer !important;
+    text-decoration: none;
+}

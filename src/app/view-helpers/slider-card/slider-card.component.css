@@ -1,0 +1,63 @@
+article {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    padding: 0px;
+    width: 86%;
+    margin: auto;
+}
+
+.card {
+    padding: 0px;
+    margin: 10px 25px 40px 0px;
+    border: none;
+    max-height: 300px;
+    max-width: 180px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    background-color: black !important;
+}
+.card img {
+    width: 100%;
+    margin: 0px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover{opacity: 0.4;}
+.card:hover .fa-play-circle{opacity: 1;}
+.card i {opacity: 0; position: absolute; top: 25%; left: 30%; right: 30%; font-size: 100px; color: #1A90CF;}
+
+.card6{
+    height: 300px !important;
+    margin-top: 65px !important;
+}
+.mms{
+    padding: 0px 15px;
+}
+
+.card7{
+    height: 300px !important;
+    margin-top: 65px !important;
+}
+.kids{
+    padding: 0px 15px;
+}
+
+.turkey{
+    padding: 0px 15px;
+}
+
+.card9{
+    height: 300px !important;
+}
+
+.collection{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-wrap: wrap;
+    max-height: 580px;
+}

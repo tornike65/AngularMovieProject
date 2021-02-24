@@ -1,0 +1,75 @@
+<main>
+    <app-slider [sliderData]="sliderData"></app-slider>
+    <section>
+        <article class="">
+            <div class="top">
+                <h3>ფილმები ქართულად</h3>
+                <div class="arrow">
+                    <button class="carousel-movers left-btn" (click)="movfirst1()"><i
+                            class="fa fa-chevron-left"></i></button>
+                    <button class="carousel-movers right-btn" (click)="movnext1()"><i
+                            class="fa fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <app-slider-card [cardsData]="cardsData"></app-slider-card>
+        </article>
+        <article class="">
+            <div class="top">
+                <h3>სერიალები ქართულად</h3>
+                <div class="arrow">
+                    <button class="carousel-movers left-btn" (click)="movfirst2()"><i
+                            class="fa fa-chevron-left"></i></button>
+                    <button class="carousel-movers right-btn" (click)="movnext2()"><i
+                            class="fa fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+
+            <app-slider-card [tvShowcardsData]="tvShowcardsData"></app-slider-card>
+
+        </article>
+        <article >
+            <div class="top">
+                <div class="left">
+                    <h3>ტოპ ფილმები</h3>
+                    <div class="buttons">
+                        <button #day class="btn day" (click) = "popularByDay(day,week)">დღის</button>
+                        <button #week class="btn week" (click) = "popularByWeek(week,day)">კვირის</button>
+                    </div>
+                </div>         
+                <div class="arrow">
+                    <button class="carousel-movers left-btn" (click)="movfirst3()"><i
+                            class="fa fa-chevron-left"></i></button>
+                    <button class="carousel-movers right-btn" (click)="movnext3()"><i
+                            class="fa fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <app-slider-card [popularData]="popularData"></app-slider-card>
+        </article>
+        <article >
+            <div class="top">
+                <h3>პრემიერა</h3>
+                <div class="arrow">
+                    <button class="carousel-movers left-btn" (click)="movfirst4()"><i
+                            class="fa fa-chevron-left"></i></button>
+                    <button class="carousel-movers right-btn" (click)="movnext4()"><i
+                            class="fa fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <app-slider-card [tvUpcomingsData]="tvUpcomingsData"></app-slider-card>
+        </article>
+        <article >
+            <div class="top">
+                <h3>ტოპ სერიალები</h3>
+                <div class="arrow">
+                    <button class="carousel-movers left-btn" (click)="movfirst10()"><i
+                            class="fa fa-chevron-left"></i></button>
+                    <button class="carousel-movers right-btn" (click)="movnext10()"><i
+                            class="fa fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <app-slider-card [topTvSeries]="topTvSeries"></app-slider-card>
+        </article>
+
+    </section>
+</main>

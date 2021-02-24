@@ -1,0 +1,42 @@
+.w-100 {
+    object-fit: contain;
+    overflow: hidden;
+}
+.slider-area{overflow: hidden;}
+#carouselExampleCaptions {
+   background: black;
+}
+
+.carousel-inner{width: 60%; margin: auto; height: 500px;}
+.carousel-item h1 {
+    font-size: 45px;
+}
+.carousel-indicators li {
+    border-radius: 50% !important;
+    width: 15px;
+    height: 15px;
+}
+.carousel-caption{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    width: 66px;
+    height: 66px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.play{
+    display: none;
+}
+.carousel-item:hover{
+    cursor: pointer;
+
+}
+.carousel-item:hover .play, path{
+    display: block;
+    fill: #1A90CF;
+}

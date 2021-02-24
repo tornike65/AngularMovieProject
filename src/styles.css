@@ -1,0 +1,110 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+body{
+    background-color: #202328 !important;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@media only screen and (max-width: 1500px) {
+  .film{
+      width: 100% !important;
+      left: 0px !important;
+  }
+
+  .info{
+      width: 70% !important; 
+  }
+
+  .similar {
+      width: 70% !important; 
+  }
+
+  .comments{
+      width: 70% !important;
+  }
+
+  .description{
+      width: 70% !important;
+  }
+  .carousel-inner{
+      height: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+    .navbar{
+        width: 100% !important;
+        }
+        .form-inline {
+        width: 600px !important;
+        }
+}
+
+@media only screen and (max-width: 768px) {
+    .top {
+        width: 93% !important;
+        margin: auto;
+    }
+
+    .add ul {
+        justify-content: center !important;
+    }
+
+    .filter{
+        width: 85% !important;
+        margin: auto;
+    }
+
+    .form-inline{
+        width: 350px !important;
+    }
+    .arrow{
+        display: none !important;
+    }
+    article{
+        flex-wrap: wrap;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+    .card{
+        margin:  0px 10px 15px 0px !important;
+        max-width: 140px !important;
+    }
+
+    .description{
+        width: 100% !important;
+    }
+
+    .similar{
+        width: 100% !important;
+    }
+
+    .comments{
+        width: 100% !important;
+    }
+
+    .navbar-brand{
+        display: none !important;
+    }
+    .carousel-inner{
+        height: 160px !important;
+    }
+    .info{
+        width: 97% !important;
+        margin:  auto !important; 
+    }
+  }
+
+  @media only screen and(max-width: 501px){
+      .form-inline{
+          width: 225px !important;
+      }
+      .film{
+          width: 100% !important;
+          left: 0px !important;
+      }
+
+      .description  .poster img{
+          width: 100% !important;
+      }
+  }
