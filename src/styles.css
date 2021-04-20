@@ -63,7 +63,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     }
     article{
         flex-wrap: wrap;
-        justify-content: center !important;
+        justify-content: flex-start !important;
         width: 100% !important;
     }
     .card{
@@ -101,6 +101,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
       }
       .film{
           width: 100% !important;
+          padding: 0px 16px !important;
           left: 0px !important;
       }
 
